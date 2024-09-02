@@ -1,20 +1,20 @@
-// const mysql = require("mysql");
+const mysql = require("mysql");
 
-// const connection = mysql.createConnection({
-//   host: "sql6.freemysqlhosting.net",
-//   database: "sql6697610",
-//   user: "sql6697610",
-//   password: "@Ajaykumar93922",
-// });
+const connection = mysql.createConnection({
+  host: "sql6.freemysqlhosting.net",
+  database: "sql6697610",
+  user: "sql6697610",
+  password: "@Ajaykumar93922",
+});
 
-// connection.connect((error) => {
-//   if (error) {
-//     console.log("Unable to connect to the server");
-//   } else {
-//     console.log("Connection successful");
-//   }});
+connection.connect((error) => {
+  if (error) {
+    console.log("Unable to connect to the server");
+  } else {
+    console.log("Connection successful");
+  }});
 
-// module.exports = connection;
+module.exports = connection;
 
 // const mysql = require("mysql");
 
@@ -54,23 +54,23 @@
 
 // module.exports = client;
 
-const { Client } = require('pg');
+// const { Client } = require('pg');
 
-const client = new Client({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 5432, // Default port for PostgreSQL
-});
+// const client = new Client({
+//   user: process.env.DB_USER,
+//   host: process.env.DB_HOST,
+//   database: process.env.DB_NAME,
+//   password: process.env.DB_PASSWORD,
+//   port: process.env.DB_PORT || 5432, // Default port for PostgreSQL
+// });
 
-client.connect((err) => {
-  if (err) {
-    console.error('Unable to connect to the server:', err.message);
-  } else {
-    console.log('Connection successful');
-  }
-});
+// client.connect((err) => {
+//   if (err) {
+//     console.error('Unable to connect to the server:', err.message);
+//   } else {
+//     console.log('Connection successful');
+//   }
+// });
 
-module.exports = client;
+// module.exports = client;
 
